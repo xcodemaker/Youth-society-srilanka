@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>
+      Welcome
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="iabService.openSettings()">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="content">
+  <div class="img">
+  <img style="width: 100%; height: 100%; opacity: 0.7;" src="assets/imgs/img.jpg"/>
+  </div>
+  <!-- <button ion-button clear icon-left (click)="openWebpage('https://ionicframework.com/docs/native/in-app-browser/')">
+    <ion-icon name="ionic"></ion-icon>
+    Open Ionic Documentation
+  </button> -->
+
+  <!-- <ion-card no-padding> -->
+    <!-- <ion-card-header>
+      Open any URL
+    </ion-card-header> -->
+    <!-- <ion-card-content>
+      <form [formGroup]="homeForm" novalidate nopadding no-padding>
+        <ion-item text-wrap no-padding>
+          <ion-label floating>URL</ion-label>
+          <ion-input type="url" formControlName="url"></ion-input>
+        </ion-item>
+        <ion-item text-wrap no-padding>
+          <ion-label>Open in</ion-label>
+          <ion-select formControlName="target">
+            <ion-option *ngFor="let target of targets" value="{{ target  }}">{{ target  }}</ion-option>
+          </ion-select>
+        </ion-item>
+      </form>
+    </ion-card-content> -->
+    <!-- <ion-item>
+      <button type="submit" ion-button item-end (click)="checkInput()">
+          Open
+      </button>
+      <button ion-button round>Round Button</button>
+    </ion-item>
+  </ion-card> -->
+  <!-- <button ion-button round (click)="checkInput()" style="margin-top: 20px;">Page Log</button>
+  <button ion-button round (click)="navigateToAbout()">About</button> -->
+
+  <div class="or-box">
+            
+      <div class="row" style="padding:10px">
+              
+              <ion-grid>
+                      <ion-row>
+                              <ion-col col-12>
+                                      <button class="btn-facebook" (click)="checkInput()" ion-button block>
+                                          Page Log
+                                      </button>
+                              </ion-col>
+                      </ion-row>
+                      
+                  <ion-row>
+                      <ion-col col-12>
+                          <button class="btn-google" (click)="navigateToAbout()" ion-button block>
+                              About
+                          </button>
+                  </ion-col>
+              </ion-row>
+              </ion-grid>
+              </div>
+  </div>
+  <img style="width: 20%; height: 16%;" src="assets/imgs/logo.png"/>
+
+</ion-content>
